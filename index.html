@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FrontendBattle - Complete Solution</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Loader -->
+    <div id="loader">
+      <div class="loader-content">
+        <div class="loader-icon"></div>
+        <div class="loader-text">FRONTEND BATTLE</div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-code"></i>
+          FrontendBattle
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#stats">Stats</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Light/Dark Mode Toggle -->
+    <button id="mode-toggle" aria-label="Toggle dark mode">
+      <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" aria-label="Back to top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Home Section -->
+    <section id="home">
+      <div class="home-content">
+        <h1>Welcome to the <span>Frontend Battle!</span></h1>
+        <p>
+          Join the ultimate challenge for frontend developers to showcase your
+          skills and creativity. Build amazing interfaces and win exciting
+          prizes.
+        </p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+      <div class="home-media">
+        <div class="home-video-container">
+          <div class="home-video-overlay"></div>
+          <div class="stats-placeholder"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <div class="section-title">
+        <h2>Our Amazing Features</h2>
+        <p>
+          Discover the powerful features that make FrontendBattle the perfect
+          platform to showcase your frontend skills
+        </p>
+      </div>
+      <div class="features-container">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-tachometer-alt"></i>
+          </div>
+          <h3>Fast Performance</h3>
+          <p>
+            Optimized for the highest performance and speed in all modern
+            browsers.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3>Responsive Design</h3>
+          <p>
+            Looks perfect on any device from smartphones to large desktop
+            screens.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <h3>Theme Options</h3>
+          <p>
+            Choose between light and dark modes for comfortable viewing at any
+            time.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3>Analytics</h3>
+          <p>
+            Track your progress with detailed statistics and performance
+            metrics.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-comments"></i>
+          </div>
+          <h3>Testimonials</h3>
+          <p>
+            Read what our users say about their experience with our platform.
+          </p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3>24/7 Support</h3>
+          <p>
+            Our dedicated team is always ready to help you with any questions.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats">
+      <div class="section-title">
+        <h2>Impressive Stats</h2>
+        <p>
+          Our platform has helped thousands of developers improve their frontend
+          skills
+        </p>
+      </div>
+      <div class="stats-container">
+        <div class="stat-item">
+          <div class="stat-number" id="stat1">0</div>
+          <div class="stat-label">Active Users</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="stat2">0</div>
+          <div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-number" id="stat3">0</div>
+          <div class="stat-label">Satisfaction Rate</div>
+        </div>
+      </div>
+      <div class="stats-media">
+        <div class="stats-image">
+          <div class="graph-placeholder"></div>
+        </div>
+        <div class="stats-image">
+          <div class="chart-placeholder"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="section-title">
+        <h2>User Testimonials</h2>
+        <p>Hear what our amazing users have to say about their experience</p>
+      </div>
+      <div class="testimonials-container">
+        <div class="testimonial-slide active">
+          <div class="testimonial-card">
+            <div class="user-info">
+              <div class="user-avatar">
+                <div class="avatar-placeholder"></div>
+              </div>
+              <h3 class="user-name">Sarah Johnson</h3>
+              <p class="user-position">Senior Frontend Developer</p>
+            </div>
+            <p class="testimonial-text">
+              FrontendBattle completely transformed my approach to UI
+              development. The challenges are perfectly balanced between
+              creativity and technical skills. I've improved my CSS animations
+              and JavaScript skills significantly since joining!
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="user-info">
+              <div class="user-avatar">
+                <div class="avatar-placeholder"></div>
+              </div>
+              <h3 class="user-name">Michael Chen</h3>
+              <p class="user-position">UI/UX Designer</p>
+            </div>
+            <p class="testimonial-text">
+              As a designer, I needed to improve my frontend implementation
+              skills. FrontendBattle provided the perfect platform with
+              real-world challenges. The community feedback has been invaluable
+              for my growth as a designer-developer hybrid.
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-card">
+            <div class="user-info">
+              <div class="user-avatar">
+                <div class="avatar-placeholder"></div>
+              </div>
+              <h3 class="user-name">Emma Rodriguez</h3>
+              <p class="user-position">Fullstack Developer</p>
+            </div>
+            <p class="testimonial-text">
+              I've tried many frontend learning platforms, but FrontendBattle
+              stands out with its practical approach. The challenges simulate
+              real client projects, and the dark mode implementation is
+              especially nice for late-night coding sessions!
+            </p>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-nav">
+        <video src="/Assets/testimonials.mp4"></video>
+        <button class="active" aria-label="Testimonial 1">v2</button>
+
+        <button aria-label="Testimonial 2"></button>
+
+        <button aria-label="Testimonial 3"></button>
+      </div>
+      <div class="testimonial-nav">
+        <video src="/Assets/features-services.mp4">v1</video>
+      </div>
+      <div class="testimonial-nav">
+        <video src="/Assets/customer-section.mp4">v3</video>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="section-title">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to join our community? Reach out to us!</p>
+      </div>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Your Email</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea
+            id="message"
+            placeholder="How can we help you?"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary submit-btn">
+          Send Message
+        </button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>FrontendBattle</h3>
+          <p>
+            The ultimate platform for frontend developers to showcase their
+            skills through creative challenges and competitions.
+          </p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#home"><i class="fas fa-chevron-right"></i> Home</a>
+            </li>
+            <li>
+              <a href="#features"
+                ><i class="fas fa-chevron-right"></i> Features</a
+              >
+            </li>
+            <li>
+              <a href="#stats"><i class="fas fa-chevron-right"></i> Stats</a>
+            </li>
+            <li>
+              <a href="#testimonials"
+                ><i class="fas fa-chevron-right"></i> Testimonials</a
+              >
+            </li>
+            <li>
+              <a href="#contact"
+                ><i class="fas fa-chevron-right"></i> Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Info</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="#"
+                ><i class="fas fa-map-marker-alt"></i> 123 Developer Street,
+                Code City</a
+              >
+            </li>
+            <li>
+              <a href="tel:+1234567890"
+                ><i class="fas fa-phone"></i> +1 (234) 567-890</a
+              >
+            </li>
+            <li>
+              <a href="mailto:info@frontendbattle.com"
+                ><i class="fas fa-envelope"></i> info@frontendbattle.com</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fas fa-globe"></i> www.frontendbattle.com</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2023 FrontendBattle. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
